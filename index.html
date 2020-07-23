@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title> Continent Map</title>
+    <link rel = "stylesheet" href="main.css"/>
+  </head>
+  <body onload="main()">
+    <h1 class="header1" style="text-align:center;"> Hello World from Flask Web App </h1>
+    <h2 style="color: pink;">Test</h2>
+    <figure>
+      <img usemap="#continents_map" src = "https://bit.ly/2bgFrvL" width = "600px">
+    </figure>
+    <map name="continents_map">
+      <area shape="circle" coords="70,70,10" href="https://en.wikipedia.org/wiki/North_America" target="_bank">
+      <area shape="circle" coords="133,185,10" href="https://en.wikipedia.org/wiki/South_America" target="_bank">
+      <area shape="circle" coords="269,137,10" href="https://en.wikipedia.org/wiki/Africa" target="_bank">
+      <area shape="circle" coords="292,45,10" href="https://en.wikipedia.org/wiki/Europe" target="_bank">
+      <area shape="circle" coords="340,267,10" href="https://en.wikipedia.org/wiki/Antarctica" target="_bank">
+      <area shape="circle" coords="374,65,10" href="https://en.wikipedia.org/wiki/Asia" target="_bank">
+      <area shape="circle" coords="470,202,10" href="https://en.wikipedia.org/wiki/Australia" target="_bank">
+    </map>
+    <h2>HTML Table</h2>
+    <table style="width: 100%">
+      <tr>
+        <th style="text-align: left;">First Name</th>
+        <th style="text-align: left;">Last Name</th>
+        <th style="text-align: left;">Age</th>
+      </tr>
+      <tr>
+        <td>Nicole</td>
+        <td>Meister</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Nadine</td>
+        <td>Meister</td>
+        <td>18</td>
+      </tr>
+    </table>
+    <!-- Radio buttons -->
+    <form>
+      <input type="radio" id="male" name="gender" value="male">
+      <label>Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label>Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label>Other</label>
+    </form>
+    <!--Text input fields-->
+    <form>
+      <label> First name: </label>
+      <input type = "text" id = "firstname" name="firstname" placeholder="Enter your first name">
+      <br>
+      <label> Last name: </label>
+      <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+    </form>
+
+    <button class="btn btn-1">
+      Button 1
+    </button>
+    <button id="btn btn-2">
+      Button 2
+    </button>
+    <script src="main.js"></script>
+  </body>
